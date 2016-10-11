@@ -1,6 +1,6 @@
-before_install: chmod +x gradlew
+#before_install: chmod +x gradlew
 install: ./gradlew setupCIWorkspace -s
 script: ./gradlew build -s
-jdk:
-  - oraclejdk8
+#jdk:
+#  - oraclejdk8
 # Caching for Gradle files, prevents hitting Maven too much.
