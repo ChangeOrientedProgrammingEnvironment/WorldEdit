@@ -1,9 +1,15 @@
 #before_install: chmod +x gradlew
 
-install: 
-  - gradlew.bat setupCIWorkspace -s
-script: 
-  - gradlew.bat build -s
+#install: 
+#  - gradlew.bat setupCIWorkspace -s
+#script: 
+#  - gradlew.bat build -s
 #jdk:
 #  - oraclejdk8
 # Caching for Gradle files, prevents hitting Maven too much.
+
+install:
+  - gradlew.bat setupCIWorkspace -s
+
+build_script:
+  - gradlew.bat build -s
